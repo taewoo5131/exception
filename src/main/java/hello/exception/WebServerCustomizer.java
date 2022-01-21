@@ -17,7 +17,6 @@ public class WebServerCustomizer implements WebServerFactoryCustomizer<Configura
         // RuntimeException의 자식 예외들
         ErrorPage errorPageEx = new ErrorPage(RuntimeException.class, "/error-page/500");
 
-        //
         factory.addErrorPages(errorPage404,errorPage500,errorPageEx);
     }
 }
